@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of diamonds with Dream Diamond. From detailed information on diamond cuts, colors, and carats to predicting diamond prices using cutting-edge ML technology. Uncover the beauty, history, and rarity of diamonds. Your journey to finding the perfect diamond starts here.">
+    <title>Dream Diamond</title>
+    <link rel="stylesheet" href="static/index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dream Diamond</h1>
+    </header>
+    <div class="divider"></div>
+    <div class="dream-price">
+      <h1 style="color: #111; text-align:center;">Predict Your Dream Diamond Price</h1>
+      <p style="color: #111; "><b>Unlock the secrets of diamond pricing with our cutting-edge prediction tool. Discover the allure of your dream diamond and explore a world where technology meets elegance.</b></p>
+      <button><a href="{{url_for('diamond_form')}}">Get Started</a></button>
+  </div>
+  <div class="divider"></div>
+    <main>
+      <h2>Diamond Clarity </h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Clarity Grade</th>
+                  <th>Description</th>
+              </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td>IF</td>
+              <td>Internally Flawless</td>
+          </tr>
+          <tr>
+              <td>VVS1</td>
+              <td>Very Very Slightly Included 1</td>
+          </tr>
+          <tr>
+              <td>VVS2</td>
+              <td>Very Very Slightly Included 2</td>
+          </tr>
+          <tr>
+              <td>VS1</td>
+              <td>Very Slightly Included 1</td>
+          </tr>
+          <tr>
+              <td>VS2</td>
+              <td>Very Slightly Included 2</td>
+          </tr>
+          <tr>
+              <td>SI1</td>
+              <td>Slightly Included 1</td>
+          </tr>
+          <tr>
+              <td>SI2</td>
+              <td>Slightly Included 2</td>
+          </tr>
+          <tr>
+              <td>I1</td>
+              <td>Imperfect 1</td>
+          </tr>
+      
+          </tbody>
+      </table>
+      <h2>Diamond Cut </h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Cut Grade</th>
+                  <th>Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Fair</td>
+                  <td>Acceptable, reflects a small amount of light</td>
+              </tr>
+              <tr>
+                  <td>Good</td>
+                  <td>Good light return; the diamond reflects a reasonable amount of light</td>
+              </tr>
+              <tr>
+                  <td>Very Good</td>
+                  <td>Very good light return; the diamond reflects most light that enters</td>
+              </tr>
+              <tr>
+                  <td>Premium</td>
+                  <td>Excellent light return; the diamond reflects nearly all light that enters</td>
+              </tr>
+              <tr>
+                  <td>Ideal</td>
+                  <td>Maximum light return, reflects nearly all light that enters the diamond</td>
+              </tr>
+          </tbody>
+      </table>
+      <h2>Diamond Color </h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Color Grade</th>
+                  <th>Description</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>D</td>
+              <td>Colorless</td>
+          </tr>
+          <tr>
+              <td>E</td>
+              <td>Colorless</td>
+          </tr>
+          <tr>
+              <td>F</td>
+              <td>Colorless</td>
+          </tr>
+          <tr>
+              <td>G</td>
+              <td>Near Colorless</td>
+          </tr>
+          <tr>
+              <td>H</td>
+              <td>Near Colorless</td>
+          </tr>
+          <tr>
+              <td>I</td>
+              <td>Near Colorless</td>
+          </tr>
+          <tr>
+              <td>J</td>
+              <td>Near Colorless</td>
+          </tr>
+          </tbody>
+      </table>
+
+      <h2>Diamond Carat </h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Carat Range</th>
+                  <th>Description</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0.25 - 0.49</td>
+              <td>Small</td>
+          </tr>
+          <tr>
+              <td>0.50 - 0.74</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>0.75 - 0.99</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>1.00 - 1.49</td>
+              <td>Large</td>
+          </tr>
+          <tr>
+              <td>1.50 - 1.99</td>
+              <td>Large</td>
+          </tr>
+          <tr>
+              <td>2.00 - 2.99</td>
+              <td>Very Large</td>
+          </tr>
+          <tr>
+              <td>3.00 - 3.99</td>
+              <td>Very Large</td>
+          </tr>
+          <tr>
+              <td>4.00 - 4.99</td>
+              <td>Very Large</td>
+          </tr>
+          <tr>
+              <td>5.00 and above</td>
+              <td>Extremely Large</td>
+          </tr>
+          </tbody>
+      </table>
+     
+  </main>
+  <div class="divider"></div>
+  <div class="diamond-facts">
+    <h1>Diamond Facts</h1>
+    <p>Diamonds are not only the hardest substance on Earth but also hold a rich history. The world's largest diamond, the Cullinan, weighed an astounding 3,106 carats before being cut into smaller gems. Diamonds are formed deep within the Earth's mantle over millions of years under extreme pressure and high temperatures. The Hope Diamond, one of the most famous diamonds in the world, is said to carry a curse. Throughout history, diamonds have been associated with strength, wealth, and everlasting love. The Koh-i-Noor, a famous diamond, has a storied past, believed to have brought misfortune to some of its owners.</p>
+
+    <div class="diamond-image">
+        <img src="static/depositphotos_31113505-stock-photo-diamond.jpg" alt="Rare Diamond Image" style="max-width: 100%; border-radius: 10px;">
+    </div>
+
+    <p>One of the rarest diamonds is the Blue Moon. This exquisite diamond was sold for a record-breaking $48.5 million at an auction. Another exceptional diamond is the Moussaieff Red, known for its deep red color. The Dresden Green Diamond, with its distinctive green hue, is displayed at the Dresden Castle in Germany. These rare gems showcase the diversity and beauty found in the world of diamonds.</p>
+</div>
+  <div class="divider"></div>
+  <div class="about-us">
+    <h2 style="color: #111; text-align:center;">About Us</h2>
+    <p style="color: #111; "><b>Welcome to DreamDiamond, where the brilliance of diamonds meets the power of technology. Our website is dedicated to helping users predict diamond prices through the innovative use of Machine Learning (ML). Leveraging advanced algorithms, we analyze various factors influencing diamond values, including cut, color, clarity, and carat weight. Our mission is to empower diamond enthusiasts, jewelers, and investors with accurate price predictions, providing valuable insights into the world of diamonds. Join us on this journey to unravel the mysteries of diamond pricing with the precision of machine learning.</b></p>
+</div>
+<div class="divider"></div>
+    <footer>
+        <div class="footer-section">
+          <p>&copy; 2024 Dream Diamond</p>
+            
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact On</h3>
+            <ul>
+                <li><a class="footer-link" href="#">Quora</a></li>
+                <li><a class="footer-link" href="#">Github</a></li>
+                <li><a class="footer-link" href="#">Linkedin</a></li>
+               
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

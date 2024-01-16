@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of diamonds with Dream Diamond. From detailed information on diamond cuts, colors, and carats to predicting diamond prices using cutting-edge ML technology. Uncover the beauty, history, and rarity of diamonds. Your journey to finding the perfect diamond starts here.">
+    <title>Predict Diamond Price</title>
+    <link rel="stylesheet" href="static/diamond_form.css">
+</head>
+<body>
+    <header>
+        <h1 >Dream Diamond</h1>
+    </header>
+    <div class="divider"></div>
+    <main>
+        <form action="{{url_for('diamond_form')}}" method="post">
+           
+               
+          
+            <label for="carat">Carat:</label>
+            <input type="number" id="carat" name="carat" step="0.01" placeholder="Enter carat">
+
+            <label for="cut">Cut:</label>
+            <select id="cut" name="cut">
+                <option value="Ideal">Ideal</option>
+                <option value="Premium">Premium</option>
+                <option value="Very Good">Very Good</option>
+                <option value="Good">Good</option>
+                <option value="Fair">Fair</option>
+            </select>
+
+            <label for="color">Color:</label>
+            <select id="color" name="color">
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+            </select>
+
+            <label for="clarity">Clarity:</label>
+            <select id="clarity" name="clarity">
+                <option value="IF">Internally Flawless (IF)</option>
+                <option value="VVS1">Very Slightly Included (VVS1)</option>
+                <option value="VVS2">Very Slightly Included (VVS2)</option>
+                <option value="VS1">Very Slightly Included (VS1)</option>
+                <option value="VS2">Very Slightly Included (VS2)</option>
+                <option value="SI1">Slightly Included (SI1)</option>
+                <option value="SI2">Slightly Included (SI2)</option>
+                <option value="I1">Included (I1)</option>
+                <option value="I2">Included (I2)</option>
+                <option value="I3">Included (I3)</option>
+            </select>
+
+            <label for="depth">Depth:</label>
+            <input type="number" id="depth" name="depth" step="0.01" placeholder="Enter depth">
+
+            <label for="table">Table:</label>
+            <input type="number" id="table" name="table" step="0.01" placeholder="Enter table">
+
+            <label for="x">X:</label>
+            <input type="number" id="x" name="x" step="0.01" placeholder="Enter X">
+
+            <label for="y">Y:</label>
+            <input type="number" id="y" name="y" step="0.01" placeholder="Enter Y">
+
+            <label for="z">Z:</label>
+            <input type="number" id="z" name="z" step="0.01" placeholder="Enter Z">
+       
+            <button type="Submit">Submit</button>
+            
+        
+        </form>
+        <div class="predicted-price">
+            <h2>Predicted Price</h2>
+            <h3>Your Diamond's Estimated Price: $ {{final_result}}</h3>
+            <button><a href="{{url_for('index')}}">Go Back To Home</a></button>
+        </div>
+    </main>
+    <div class="divider"></div>
+    <footer>
+        <div class="footer-section">
+          <p>&copy; 2024 Dream Diamond</p>
+            
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact On</h3>
+            <ul>
+                <li><a class="footer-link" href="#">Quora</a></li>
+                <li><a class="footer-link" href="#">Github</a></li>
+                <li><a class="footer-link" href="#">Linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

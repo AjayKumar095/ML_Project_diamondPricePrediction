@@ -1,0 +1,10 @@
+pandas
+numpy
+flask
+sklearn
+dataclasses 
+
+
+
+
+-e.
