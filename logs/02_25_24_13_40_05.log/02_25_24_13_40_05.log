@@ -1,0 +1,10 @@
+[ 2024-02-25 13:40:06,133 ] 96 werkzeug - WARNING -  * Debugger is active!
+[ 2024-02-25 13:40:06,133 ] 96 werkzeug - INFO -  * Debugger PIN: 795-172-197
+[ 2024-02-25 13:40:23,609 ] 9 root - INFO - We at home page
+[ 2024-02-25 13:40:23,659 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 13:40:23] "GET / HTTP/1.1" 200 -
+[ 2024-02-25 13:40:23,925 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 13:40:23] "GET /static/index.css HTTP/1.1" 200 -
+[ 2024-02-25 13:40:23,928 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 13:40:23] "GET /static/depositphotos_31113505-stock-photo-diamond.jpg HTTP/1.1" 200 -
+[ 2024-02-25 13:40:23,979 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 13:40:23] "GET /static/mosaic-2790344_1920.png HTTP/1.1" 200 -
+[ 2024-02-25 13:40:24,008 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 13:40:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2024-02-25 13:40:47,729 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 13:40:47] "GET /diamond_form HTTP/1.1" 200 -
+[ 2024-02-25 13:40:47,767 ] 96 werkzeug - INFO - 127.0.0.1 - - [25/Feb/2024 13:40:47] "GET /static/diamond_form.css HTTP/1.1" 200 -
